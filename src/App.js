@@ -8,7 +8,7 @@ function dealData(url,data,menthod='post'){
     body: JSON.stringify(data),
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
-      "Authorization": "MTExOTUyNjM1Mjg1MzQyMjEzMQ.GLDKgQ.9JnMD3ngMfwiYebIQN-pfOpwTZDP_gwXq8gSI0"
+      "Authorization": "MTExODc5MjI2MDE0Njk3MDYyNA.Gn-LWx.rx_pgmIGY6pWT988VHVNlkpXEb9CBwMSB3GpPg"
     }
   }).then(res => {
     return res.json();
@@ -22,12 +22,12 @@ function dealData(url,data,menthod='post'){
 function MyButton() {
 
   function handleClick() {
-    let needdata={
+    let obj = {
       "type": 2,
       "application_id": "936929561302675456",
-      "guild_id": "1119528821654290544",
-      "channel_id": "1119528822283444287",
-      "session_id": "88e0dcc2e6a55e640b1890b64378c97b",
+      "guild_id": "1118790480692527154",
+      "channel_id": "1118790481187450893",
+      "session_id": "0097963a6eea34545e783d8509967fc7",
       "data": {
         "version": "1118961510123847772",
         "id": "938956540159881230",
@@ -36,7 +36,7 @@ function MyButton() {
         "options": [{
           "type": 3,
           "name": "prompt",
-          "value": "The grand palace of the Qin dynasty stands tall in the Qin River, while the magnificent imperial residence of the Han dynasty dominates the Hangu Pass. The palace is adorned with countless splendid halls and chambers, and the imperial gardens are home to more than a hundred exotic birds. The palace walls stretch far into the distance, and the towering observatories offer breathtaking views of the surrounding landscape. The misty clouds often obscure the sun, and the gentle breeze carries the fragrance of exotic flowers. Amidst all this beauty, one can easily lose track of time and become immersed in the grandeur of the palace."
+          "value": "一个小狗在哭泣"
         }],
         "application_command": {
           "id": "938956540159881230",
@@ -58,9 +58,9 @@ function MyButton() {
         },
         "attachments": []
       },
-      "nonce": "1119530868424048640"
+      "nonce": "1123078689156759552"
     }
-    dealData('https://discord.com/api/v9/interactions',needdata)
+    dealData('https://discord.com/api/v9/interactions',obj)
     // 示例1
   }
 
