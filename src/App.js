@@ -8,7 +8,7 @@ function dealData(url,data,menthod='post'){
     body: JSON.stringify(data),
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
-      "Authorization": "MTExODc5MjI2MDE0Njk3MDYyNA.Gn-LWx.rx_pgmIGY6pWT988VHVNlkpXEb9CBwMSB3GpPg"
+      "Authorization": "MTExODc4ODM2ODA2NzcyMzM1NQ.Gx_6f4._gnT_HT1lQe_M0_hBQuVclbgEFwnUkgehjUR1Y"
     }
   }).then(res => {
     return res.json();
